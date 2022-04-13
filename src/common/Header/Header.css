@@ -1,0 +1,13 @@
+.nav-bar a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-weight: 600;
+    
+}
+
+.search{
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+}
