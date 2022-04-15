@@ -1,29 +1,28 @@
 import React from 'react';
 import logo from '../../images/logo.png'
-import { Link } from 'react-router-dom';
+
 import './Header.css'
-import { Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 const Header = () => {
     return (
-            <Navbar bg="dark" expand="lg">
-                <Container >
-                    <Link to="/"> <img width='150px' src={logo} alt="" /> </Link>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse className='d-flex justify-content-between'>
-                        <Nav>
-                            <div className='nav-bar'>
-                                <Link to='/home'>Home</Link>
-                                <Link to='/services'>Services</Link>
-                            </div>
-
-                        </Nav>
-                        <Form className="d-flex mr-3 justify-content-between">
-                            <input type="text" placeholder='search' className='search' />
-                            
-                        </Form>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+        <Navbar.Brand href="#home"><img height= {30} src={logo} alt="" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#services">Services</Nav.Link>
+            
+          </Nav>
+          <Nav>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#login">Login</Nav.Link>
+            
+          </Nav>
+        </Navbar.Collapse>
+        </Container>
+      </Navbar>
         
 
          /* <nav className='d-flex align-items-center'>
