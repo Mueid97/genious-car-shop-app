@@ -7,7 +7,7 @@ const ServicesDetails = () => {
 
     const { id } = useParams();
 
-    const service = services.find((service) => service.id == id);
+    const service = services.find((service) => service._id == id);
     return (
         <div className='d-flex justify-content-center align-items-center' style={{height: '100vh'}}>
             <div className=' g-4 col-sm-12 col-md-6 col-lg-4'>
